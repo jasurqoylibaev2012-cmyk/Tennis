@@ -1,0 +1,373 @@
+/* Club Page Specific Styles */
+@import url('style.css');
+/* Ensuring variable access if needed, though usually linked in HTML */
+
+.inner-header {
+    height: 450px !important;
+    background-image: url('./huynya.jpg') !important;
+    background-position: center 100%;
+}
+
+.inner-header .header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* About Club Section */
+.about-section {
+    padding: 100px 0;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    gap: 0;
+}
+
+.about-image-wrapper {
+    flex: 0 0 500px;
+    height: 600px;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-content-card {
+    background-color: #F6EDD9;
+    /* Light cream color from screenshot */
+    padding: 60px 80px;
+    margin-left: -100px;
+    /* Increased overlap effect */
+    padding-left: 140px;
+    /* Offset for overlap */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+.about-content-card h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.stat-number {
+    font-size: 4.5rem;
+    /* Larger numbers for premium feel */
+    font-weight: 700;
+    color: #7776BC;
+    /* Purple-ish color from screenshot */
+    line-height: 1;
+}
+
+.stat-desc-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.stat-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #444;
+    font-weight: 600;
+}
+
+/* Court Photos Section */
+.court-photos-section {
+    padding: 80px 0;
+}
+
+.court-photos-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.court-photos-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.court-slider-nav {
+    display: flex;
+    gap: 12px;
+}
+
+.court-slider-btn {
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color, #9090D0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.court-slider-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.court-slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.court-slider-track {
+    position: relative;
+    width: 100%;
+}
+
+.court-card {
+    display: none;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    border-radius: 8px;
+    transition: opacity 0.5s ease;
+}
+
+.court-card.active {
+    display: block;
+}
+
+.court-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.court-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.court-card:hover .court-image-wrapper img {
+    transform: scale(1.02);
+}
+
+.court-tag {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: var(--primary-color, #9090D0);
+    color: white;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 2px;
+    box-shadow: 0 8px 20px rgba(144, 144, 208, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Rules Section */
+.rules-section {
+    padding: 80px 0;
+}
+
+.rules-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.rules-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.rules-nav {
+    flex: 0 0 300px;
+}
+
+.rules-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rules-nav-list li {
+    margin-bottom: 20px;
+}
+
+.rules-nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.rules-nav-list a:hover {
+    color: #7776BC;
+}
+
+.rules-nav-list a.active {
+    color: #7776BC;
+}
+
+.rules-content {
+    flex: 1;
+}
+
+.rule-block {
+    margin-bottom: 40px;
+}
+
+.rule-subtitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.rule-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.rule-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+.rule-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #333;
+}
+
+.rules-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image-wrapper {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-content-card {
+        margin-left: 0;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .about-content-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .court-image-wrapper {
+        height: 300px;
+    }
+
+    .court-photos-section .section-title {
+        font-size: 2rem;
+    }
+
+    .court-tag {
+        bottom: 20px;
+        left: 20px;
+        font-size: 0.8rem;
+    }
+}
